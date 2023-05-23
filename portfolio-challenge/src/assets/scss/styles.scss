@@ -7,6 +7,7 @@ $primaryFont: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .container {
@@ -63,6 +64,7 @@ section {
   border-radius: 12px;
   padding: 2.3rem;
   filter: box-shadow(0px 0px 20px $textColor);
+  height: fit-content;
 }
 
 .title {
@@ -251,4 +253,92 @@ section {
       }
     }
   }
+}
+
+.blogs {
+  grid-column: 6 / 13;
+  padding-right: 0;
+
+  .small-label {
+    color: #E0E0E0;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 20px;
+  }
+
+  .titles {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 30px;
+    padding-top: 20px;
+    max-width: 50%;
+  }
+
+  .blog-container {
+    .top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  figure {
+    min-width: 390px;
+    width: 390px;
+    height: 320px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+  }
+
+  .desc {
+    padding-right: 80px;
+
+    p {
+      font-size: 1.6rem;
+      line-height: 20px;
+      margin: 20px 0;
+
+    }
+  }
+
+  a {
+    display: inline-block;
+    color: #2F80ED;
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-top: 50px;
+  }
+}
+
+.hobbies {
+  grid-column: 1 / 6;
+
+  .titles {
+    font-size: 2.4rem;
+    line-height: 30px;
+  }
+
+  .hobbie {
+    margin: 25px 0;
+
+    figure {
+      height: 140px;
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+
+    .small-title {
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
 }

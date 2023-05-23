@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .container {
@@ -57,6 +58,7 @@ section {
   border-radius: 12px;
   padding: 2.3rem;
   filter: box-shadow(0px 0px 20px #828282);
+  height: fit-content;
 }
 
 .title {
@@ -191,6 +193,77 @@ section {
 }
 .skills ul li:last-child .progress-bar::before {
   width: 50%;
+}
+
+.blogs {
+  grid-column: 6/13;
+  padding-right: 0;
+}
+.blogs .small-label {
+  color: #E0E0E0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 20px;
+}
+.blogs .titles {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 30px;
+  padding-top: 20px;
+  max-width: 50%;
+}
+.blogs .blog-container .top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.blogs figure {
+  min-width: 390px;
+  width: 390px;
+  height: 320px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.blogs .desc {
+  padding-right: 80px;
+}
+.blogs .desc p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  margin: 20px 0;
+}
+.blogs a {
+  display: inline-block;
+  color: #2F80ED;
+  font-size: 1.6rem;
+  line-height: 20px;
+  margin-top: 50px;
+}
+
+.hobbies {
+  grid-column: 1/6;
+}
+.hobbies .titles {
+  font-size: 2.4rem;
+  line-height: 30px;
+}
+.hobbies .hobbie {
+  margin: 25px 0;
+}
+.hobbies .hobbie figure {
+  height: 140px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.hobbies .hobbie .small-title {
+  margin-bottom: 10px;
+}
+.hobbies .hobbie p {
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=App.css.map */
